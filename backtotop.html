@@ -1,0 +1,74 @@
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4l-8 8h5v8h6v-8h5z" />
+    </svg>
+</button>
+
+<style>
+    #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 99;
+        width: 56px;
+        height: 56px;
+        background-color: #283c95;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(40, 60, 149, 0.5);
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #backToTopBtn:hover {
+        background-color: #1f2f70;
+        box-shadow: 0 0 25px rgba(40, 60, 149, 0.9);
+        transform: scale(1.1);
+    }
+    
+    #backToTopBtn svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    #backToTopBtn.show {
+        animation: fadeInUp 0.3s ease-in-out;
+    }
+</style>
+
+<script>
+    const mybutton = document.getElementById("backToTopBtn");
+
+    window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "flex";
+            mybutton.classList.add("show");
+        } else {
+            mybutton.style.display = "none";
+            mybutton.classList.remove("show");
+        }
+    });
+
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>

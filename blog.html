@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantez Tech</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Include Bootstrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- Animate.css (For Beautiful Animations) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Include AOS Library for Scroll Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        /* Base styles */
+        
+        .blogheader {
+            background-color: #003c58;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        
+        .blogheader h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        
+        .blogheader p {
+            margin-top: 5px;
+            font-size: 1em;
+        }
+        
+        .blogcontainer {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #003c58;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .blog-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-content h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #003c58;
+        }
+        
+        .blog-content p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .blog-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00a5a5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .blog-content a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #003c58;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <br>
+    <br>
+    <br>
+    <!-- Header -->
+    <header class="blogheader">
+        <h1>Phantez Tech Pvt. Ltd. Blog</h1>
+        <p>Insights on SAP BusinessObjects, Data Services, Integration & Migration</p>
+    </header>
+
+    <!-- Main Blog Section -->
+    <div class="blogcontainer">
+        <h2 class="section-title">Latest Posts</h2>
+
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <img src="assets/images/Blog/blog1.png" alt="SAP Data Migration" />
+                <div class="blog-content">
+                    <h3>Mastering SAP Data Migration</h3>
+                    <p>Explore best practices, tools, and challenges in migrating large datasets into SAP environments with minimal downtime.</p>
+                    <a href="data-migration.html">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                <img src="assets/images/Blog/blog2.jpg" alt="Data Integration" />
+                <div class="blog-content">
+                    <h3>Why Data Integration is Crucial for Modern SAP Systems</h3>
+                    <p>Learn how real-time and batch data integration strategies enable seamless operations and smarter analytics within SAP.</p>
+                    <a href="data-integration.html">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <img src="assets/images/Blog/blog3.webp" alt="SAP BusinessObjects" />
+                <div class="blog-content">
+                    <h3>Getting the Most Out of SAP BusinessObjects</h3>
+                    <p>Unlock powerful reporting and dashboard capabilities that turn raw data into actionable insights for decision-makers.</p>
+                    <a href="business-objects.html">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="call-to-action">
+        <h2>Take the Next Step towards<br>Transformation</h2>
+        <div style="text-align: center;">
+            <a href="contact.html" class="cta-button"><i class="fas fa-rocket" style="margin-right: 8px;"></i>GET STARTED</a></div>
+        <div class="line-divider"></div>
+        <p class="contact-text">OR CALL US AT:</p>
+        <p class="contact-number">040-35532901</p>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <div id="backtotop-placeholder"></div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#navbar-placeholder").load("nav.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#backtotop-placeholder").load("backtotop.html");
+        });
+    </script>
+
+</body>
+
+</html>

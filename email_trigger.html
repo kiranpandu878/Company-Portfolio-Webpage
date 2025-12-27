@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Trigger</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .email-container {
+            width: 100%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .email-content {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .date {
+            padding: 2px 8px;
+            background-color: #283c95;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .email-header-wrapper {
+            padding: 0 20px;
+        }
+        
+        .email-header {
+            background-color: #283c95;
+            color: #f3ecec;
+            padding: 15px;
+            margin: 0 auto;
+            max-width: 80%;
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            letter-spacing: 1px;
+            border-radius: 8px;
+        }
+        
+        .email-body {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+        
+        .email-image {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .email-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .regards {
+            padding: 20px;
+            font-size: 16px;
+            font-style: italic;
+            color: #555;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .email-content {
+                width: 100%;
+            }
+            .email-header,
+            .email-body,
+            .email-image,
+            .regards {
+                padding: 15px;
+            }
+            .email-header {
+                font-size: 20px;
+                max-width: 90%;
+            }
+            .email-body {
+                font-size: 16px;
+            }
+            .regards {
+                font-size: 14px;
+            }
+            .date {
+                font-size: 10px;
+                padding: 1px 5px;
+            }
+            .logo img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <table class="email-content" cellpadding="0" cellspacing="0" border="0">
+            <!-- Date and Logo Section -->
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="padding: 10px 20px;">
+                        <tr>
+                            <td align="left" style="vertical-align: middle;">
+                                <div class="date">{date}</div>
+                            </td>
+                            <td align="right" style="vertical-align: middle;">
+                                <img src="assets/images/logo.jpg" alt="Logo" style="width: 100px; height: auto; border-radius: 4px;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!-- Header Section -->
+            <tr>
+                <td>
+                    <div class="email-header-wrapper">
+                        <div class="email-header">
+                            Hi, {name}!
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Body Section -->
+            <tr>
+                <td class="email-body">
+                    <p>Thank you for contacting <strong>Phantez Tech pvt. Ltd.!</strong> <br>We Received Your message.</p>
+                    <p>We appreciate your interest in joining our Team</p>
+                </td>
+            </tr>
+
+            <!-- Image Section -->
+            <tr>
+                <td class="email-image">
+                    <img src="assets/images/services/consulting-150x150.png" alt="Birthday Image">
+                </td>
+            </tr>
+
+            <!-- Regards Section -->
+            <tr>
+                <td class="regards">
+                    Best Regards, <br><strong>Phantez Tech pvt. Ltd.</strong>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
